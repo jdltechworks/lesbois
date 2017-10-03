@@ -10,11 +10,36 @@ import Partners from '../components/partners'
 import Daily from '../components/daily'
 import Footer from '../components/footer'
 
+const menuSettings = [
+    {
+        name: 'home',
+        hashTag: '#home'
+    },
+    {
+        name: 'what we do',
+        hashTag: '#what-we-do'
+    },
+    {
+        name: 'partners',
+        hashTag: '#partners',
+    },
+    {
+        name: 'about',
+        hashTag: '#about'
+    },
+    {
+        name: 'daily',
+        hashTag: '#daily'
+    }
+]
+
 class Home extends Component {
     render() {
         const { props } = this
         return(
             <div className="home">
+                <Navigation menu={menuSettings}/>
+
                 <Navigation { ...props } />
                 <Jumbotron />
                 <WhatWeDo />
