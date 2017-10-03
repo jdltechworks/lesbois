@@ -1,5 +1,19 @@
 .navbar {
-    &-fixed {
-        border: 1px solid red;
+    &-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    &-menu {
+        margin: 0;
+        padding: 0;
+        &-item {
+            display: inline-table;
+            margin: 0;
+            a {
+                display: block;
+                padding: 25px;
+            }
+        }
     }
 }
